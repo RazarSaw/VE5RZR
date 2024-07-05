@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+
+/*
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
+  
 
 header {
-/*    ;*/
-  background-image: url("https://static.qrz.com/c/xx1abc/MyBackground.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/*    
   background-color: #181818;
   display: grid;
   place-items: center;
@@ -22,7 +24,7 @@ header > * {
 }
 
 
-#body {
+main {
   padding: 4rem;
   display: flex;
   flex-direction: column;
@@ -31,21 +33,6 @@ header > * {
   max-width: 600px;
   margin: 0 auto;
 }
-
-#container {
-  margin: -1.3125em -1.7125em;
-  padding: -5px;
-  line-height: 1.8;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  background-color: #101010;
-}
-
-#container p {
-  font-size: 1rem;
-  
-}
-
 
 
 #body_infocards {
@@ -92,9 +79,9 @@ header > * {
 #body_background {
   
 }
-
 .alerts {
   padding: 1rem 4rem;
   background: #d0e4fc;
   color: #0064b8;
 }
+*/

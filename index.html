@@ -4,42 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VE5RZR</title>
-    <link href="styles.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <!--<link href="styles.css" rel="stylesheet" />-->
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="container">
-      <header
-        style="
-          background-image: url('https://www.qrz.com/hampages/ve5rzr/20240510_222830.jpg');
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-        "
-      >
-        <div>
-          <h1>VE5RZR</h1>
-
-          <p>Razar Saw</p>
-        </div>
-      </header>
-
-      <div class="alerts" style="display: none">
-        <p>Good morning, good noon, good afternoon, and good night to all!</p>
+    <header
+      id="header"
+      class="bg-[url('https://www.qrz.com/hampages/ve5rzr/20240510_222830.jpg')] bg-center bg-no-repeat bg-cover grid place-items-center p-4 min-h-[20vh] text-white"
+    >
+      <div class="grid grid-cols-1 gap-4 text-center">
+        <h1 class="text-4xl font-bold">VE5RZR</h1>
+        <p>Razar Saw</p>
       </div>
+    </header>
+    <div class="alerts" style="display: none">
+      <p>Good morning, good noon, good afternoon, and good night to all!</p>
+    </div>
 
-      <div id="body">
-        <div id="body_infocards">
-          <div>
-            <span
-              ><img
-                src="https://raw.githubusercontent.com/twbs/icons/9ee0d1937adbb827d1c984ba38c50ac70becf8da/icons/patch-question.svg"
+    <main class="bg-neutral-900 grid grid-cols-1 gap-16 px-8 py-16 leading-loose">
+      <article
+        id="body_infocards"
+        class="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-8"
+      >
+        <section class="grid grid-rows-[auto_1fr] gap-4">
+          <span class="grid place-items-center"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="64"
+              height="64"
+              fill="black"
+              class="bi bi-patch-question bg-slate-200 p-4 rounded-[8px]"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.05 9.6c.336 0 .504-.24.554-.627.04-.534.198-.815.847-1.26.673-.475 1.049-1.09 1.049-1.986 0-1.325-.92-2.227-2.262-2.227-1.02 0-1.792.492-2.1 1.29A1.7 1.7 0 0 0 6 5.48c0 .393.203.64.545.64.272 0 .455-.147.564-.51.158-.592.525-.915 1.074-.915.61 0 1.03.446 1.03 1.084 0 .563-.208.885-.822 1.325-.619.433-.926.914-.926 1.64v.111c0 .428.208.745.585.745"
               />
-            </span>
-
-            <p class="blocked-text">
+              <path
+                d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911z"
+              />
+              <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0" />
+            </svg>
+          </span>
+          <div class="blocked-text bg-neutral-800 rounded-[8px] text-white p-8">
+            <p>
               My name is Razar
               <a
                 href="http://ipa-reader.xyz/?text=%C9%B9%CB%88%C9%91%CB%90z%C9%99"
@@ -47,26 +60,35 @@
               >
               , and I&#39;m a newly certified amateur radio operator. I first
               learned about the hobby from a family relative where I grew
-              increasingly appealed.<br />
-              <br />
+              increasingly appealed.
+            </p>
+            <p>
               Something about amateur radio&#39;s simplicity paired with its
               complexity sparked my curiosity. At first, I wondered &quot;what
               is this amateur radio one speaks of.&quot; With the growth of the
               internet, this was not a difficult question to answer.&nbsp;
             </p>
           </div>
+        </section>
 
-          <div>
-            <span
-              ><img
-                src="https://raw.githubusercontent.com/twbs/icons/9ee0d1937adbb827d1c984ba38c50ac70becf8da/icons/book.svg"
-            /></span>
+        <section class="grid grid-rows-[auto_1fr] gap-4">
+          <span class="grid place-items-center"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="64"
+              height="64"
+              fill="currentColor"
+              class="bi bi-book bg-slate-200 p-4 rounded-[8px]"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"
+              />
+            </svg>
+          </span>
 
-            <p class="blocked-text">
-              I began to invest time and research towards the hobby. The more I
-              learned, the more I realized that someone like me could break into
-              the hobby.<br />
-              <br />
+          <div class="blocked-text bg-neutral-800 rounded-[8px] text-white p-8">
+            <p>
               Unlike many current operators, I am not a 50 year old guy. Like
               how many operators began, I&#39;m 15. My young age is a driving
               force towards constantly learning, because there&#39;s a lot I
@@ -75,34 +97,48 @@
               qualification in Canada.
             </p>
           </div>
+        </section>
 
-          <div>
-            <span
-              ><img
-                src="https://raw.githubusercontent.com/twbs/icons/9ee0d1937adbb827d1c984ba38c50ac70becf8da/icons/broadcast.svg"
+        <section class="grid grid-rows-[auto_1fr] gap-4">
+          <span class="grid place-items-center"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="64"
+              height="64"
+              fill="currentColor"
+              class="bi bi-broadcast-pin bg-slate-200 p-4 rounded-[8px]"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8"
               />
-            </span>
+            </svg>
+          </span>
 
-            <p class="blocked-text">
+          <div class="blocked-text bg-neutral-800 rounded-[8px] text-white p-8">
+            <p>
               In 2024, I officially became certified as a true Canadian amateur
               radio operator with Basic with Honours. Currently, most of my time
               on frequencies are spent listening to conversations made in my
               local city: Regina, SK.
             </p>
           </div>
-        </div>
+        </section>
+      </article>
 
-        <div id="body_background">
-          <h2>My Background</h2>
+      <div id="body_background">
+        <h2>My Background</h2>
 
-          <p class="blocked-text">
-            Ever since grade 3, I&#39;ve been a programmer. It began with a
-            simple book where I discovered HTML. This grew into learning CSS,
-            which led to JavaScript, which eventually led to Python, C++, and
-            multiple Node.js frameworks.
-          </p>
-        </div>
+        <p class="blocked-text">
+          Ever since grade 3, I&#39;ve been a programmer. It began with a simple
+          book where I discovered HTML. This grew into learning CSS, which led
+          to JavaScript, which eventually led to Python, C++, and multiple
+          Node.js frameworks.
+        </p>
       </div>
-    </div>
+    </main>
+    <footer class="bg-gray-950 p-8 text-white">
+      <p>&copy; Khai Moe Razar Saw 2024</p>
+    </footer>
   </body>
 </html>
