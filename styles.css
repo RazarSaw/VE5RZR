@@ -1,30 +1,10 @@
-/*Actual body*/
-
-#csbody {
-  color: white;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-#calldata {
-}
-
-/*Actual subbody*/
-
-#biodata {
-  color: white;
-  margin-bottom: 4rem;
-}
-
-#t_bio.biodiv {
-  background-color: #101010;
-  padding: 0;
-}
-
-
-#header {
+header {
 /*    ;*/
   background-image: url("https://static.qrz.com/c/xx1abc/MyBackground.jpg");
   background-position: center;
@@ -33,37 +13,37 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #181818;
   display: grid;
   place-items: center;
-  min-height: 20vh;
+  min-height: 40vh;
 }
 
-#header  * {
+header > * {
   text-align: center;
+  font-family: Montserrat, 'Sans serif';
 }
 
 
-#realbody {
-  background-color: #101010;
+#body {
   padding: 4rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
   min-width: 300px;
-  max-width: 700px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
-#t_bio.biodiv {background-color:#101010}
-
-#razar_wrapper {
+#container {
   margin: -1.3125em -1.7125em;
   padding: -5px;
   line-height: 1.8;
   font-family: "Montserrat", sans-serif;
+  color: white;
+  background-color: #101010;
 }
 
-#razar_wrapper p {
+#container p {
   font-size: 1rem;
-
+  
 }
 
 
