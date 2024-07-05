@@ -15,10 +15,9 @@
   </head>
   <body>
     <header
-      id="header"
-      class="bg-[url('https://www.qrz.com/hampages/ve5rzr/20240510_222830.jpg')] bg-center bg-no-repeat bg-cover grid place-items-center p-4 min-h-[20vh] text-white"
+      class="bg-[url('./images/20240510_222830.jpg')] bg-[center_70%] bg-no-repeat bg-cover grid place-items-start text-white"
     >
-      <div class="grid grid-cols-1 gap-4 text-center">
+      <div class="grid grid-cols-1 gap-4 container mx-auto py-32 px-16">
         <h1 class="text-4xl font-bold">VE5RZR</h1>
         <p>Razar Saw</p>
       </div>
@@ -26,20 +25,28 @@
     <div class="alerts" style="display: none">
       <p>Good morning, good noon, good afternoon, and good night to all!</p>
     </div>
-
-    <main class="bg-neutral-900 grid grid-cols-1 gap-16 px-8 py-16 leading-loose">
+    <main
+      class="bg-neutral-900 grid grid-cols-1 gap-16 py-16 text-sm md:text-base"
+    >
+      <div class="mx-auto container px-16">
+        <h2
+          class="text-white text-3xl font-semibold text-center bg-green-800 p-4"
+        >
+          About Me
+        </h2>
+      </div>
       <article
         id="body_infocards"
-        class="container mx-auto grid md:grid-cols-3 grid-cols-1 gap-8"
+        class="container mx-auto grid xl:grid-cols-3 grid-cols-1 gap-16 px-16"
       >
-        <section class="grid grid-rows-[auto_1fr] gap-4">
+        <section class="grid grid-rows-[auto_1fr]">
           <span class="grid place-items-center"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="64"
               height="64"
               fill="black"
-              class="bi bi-patch-question bg-slate-200 p-4 rounded-[8px]"
+              class="bi bi-patch-question bg-slate-200 p-4 rounded-t-[8px] w-full"
               viewBox="0 0 16 16"
             >
               <path
@@ -51,34 +58,32 @@
               <path d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0" />
             </svg>
           </span>
-          <div class="blocked-text bg-neutral-800 rounded-[8px] text-white p-8">
+          <div
+            class="blocked-text bg-neutral-800 rounded-b-[8px] text-white p-8"
+          >
             <p>
               My name is Razar
               <a
                 href="http://ipa-reader.xyz/?text=%C9%B9%CB%88%C9%91%CB%90z%C9%99"
                 >(ɹˈɑːzə)</a
               >
-              , and I&#39;m a newly certified amateur radio operator. I first
-              learned about the hobby from a family relative where I grew
-              increasingly appealed.
-            </p>
-            <p>
-              Something about amateur radio&#39;s simplicity paired with its
-              complexity sparked my curiosity. At first, I wondered &quot;what
-              is this amateur radio one speaks of.&quot; With the growth of the
+              , and I&#39;m a newly certified amateur radio operator. Something
+              about amateur radio&#39;s simplicity paired with its complexity
+              sparked my curiosity. At first, I wondered &quot;what is this
+              amateur radio one speaks of.&quot; With the growth of the
               internet, this was not a difficult question to answer.&nbsp;
             </p>
           </div>
         </section>
 
-        <section class="grid grid-rows-[auto_1fr] gap-4">
+        <section class="grid grid-rows-[auto_1fr]">
           <span class="grid place-items-center"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="64"
               height="64"
               fill="currentColor"
-              class="bi bi-book bg-slate-200 p-4 rounded-[8px]"
+              class="bi bi-book bg-slate-200 p-4 rounded-t-[8px] w-full"
               viewBox="0 0 16 16"
             >
               <path
@@ -87,7 +92,9 @@
             </svg>
           </span>
 
-          <div class="blocked-text bg-neutral-800 rounded-[8px] text-white p-8">
+          <div
+            class="blocked-text bg-neutral-800 rounded-b-[8px] text-white p-8"
+          >
             <p>
               Unlike many current operators, I am not a 50 year old guy. Like
               how many operators began, I&#39;m 15. My young age is a driving
@@ -99,14 +106,14 @@
           </div>
         </section>
 
-        <section class="grid grid-rows-[auto_1fr] gap-4">
+        <section class="grid grid-rows-[auto_1fr]">
           <span class="grid place-items-center"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="64"
               height="64"
               fill="currentColor"
-              class="bi bi-broadcast-pin bg-slate-200 p-4 rounded-[8px]"
+              class="bi bi-broadcast-pin bg-slate-200 p-4 rounded-t-[8px] w-full"
               viewBox="0 0 16 16"
             >
               <path
@@ -115,7 +122,9 @@
             </svg>
           </span>
 
-          <div class="blocked-text bg-neutral-800 rounded-[8px] text-white p-8">
+          <div
+            class="blocked-text bg-neutral-800 rounded-b-[8px] text-white p-8"
+          >
             <p>
               In 2024, I officially became certified as a true Canadian amateur
               radio operator with Basic with Honours. Currently, most of my time
@@ -125,20 +134,52 @@
           </div>
         </section>
       </article>
-
-      <div id="body_background">
-        <h2>My Background</h2>
-
-        <p class="blocked-text">
-          Ever since grade 3, I&#39;ve been a programmer. It began with a simple
-          book where I discovered HTML. This grew into learning CSS, which led
-          to JavaScript, which eventually led to Python, C++, and multiple
-          Node.js frameworks.
+      <article
+        class="bg-[url('./images/P36254.jpg')] bg-cover bg-center bg-no-repeat text-white text-right"
+      >
+        <p class="container mx-auto px-16 py-32">
+          <span class="text-3xl"
+            >“Somewhere, something incredible is waiting to be known.”</span
+          ><br /><br />
+          ― Carl Sagan
         </p>
+      </article>
+      <div class="mx-auto container px-16">
+        <h2
+          class="mx-auto text-white text-3xl font-semibold text-center bg-green-800 p-4"
+        >
+          Bit Of Background
+        </h2>
       </div>
+      <article>
+        <section
+          class="container mx-auto px-16 flex flex-col md:grid grid-cols-3 grid-rows-1 gap-16 items-center"
+        >
+          <div class="col-start-2 col-end-4 row-start-1 row-end-1">
+            <img
+              src="./images/Screenshot 2024-07-05 150831.png"
+              class="rounded-[8px]"
+            />
+          </div>
+          <aside class="col-start-1 col-end-3 row-start-1 row-end-1">
+            <p
+              class="blocked-text text-white md:bg-neutral-950/60 md:p-8 rounded-[8px] backdrop-blur-lg"
+            >
+              Ever since grade 3, I&#39;ve been a programmer. It began with a
+              simple book where I discovered HTML. This grew into learning CSS,
+              which led to JavaScript, which eventually led to Python, C++, and
+              multiple Node.js frameworks.
+            </p>
+          </aside>
+        </section>
+      </article>
     </main>
-    <footer class="bg-gray-950 p-8 text-white">
-      <p>&copy; Khai Moe Razar Saw 2024</p>
+    <footer class="bg-neutral-950 text-white">
+      <div class="container mx-auto p-8 px-16">
+        <p>&copy; 2024 Khai Moe Razar Saw </p>
+        <a href="mailto:razar.saw@gmail.com">razar.saw@gmail.com</a>
+        <p>371 Retallack St,<br />Regina, SK<br />S4R 3N1</p>
+      </div>
     </footer>
   </body>
 </html>
