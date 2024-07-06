@@ -15,7 +15,7 @@
   </head>
   <body>
     <header
-      class="bg-[url('./images/20240510_222830.jpg')] bg-[center_70%] bg-no-repeat bg-cover grid place-items-start text-white"
+      class="bg-[url('./images/20240510_222830.jpg')] bg-[center_70%] bg-no-repeat bg-cover grid place-items-start text-white z-10"
     >
       <div class="grid grid-cols-1 gap-4 container mx-auto py-32 px-16">
         <h1 class="text-4xl font-bold">VE5RZR</h1>
@@ -32,7 +32,7 @@
         <h2
           class="text-white text-3xl font-semibold text-center bg-green-800 p-4"
         >
-          About Me
+          At A Glance
         </h2>
       </div>
       <article
@@ -151,17 +151,31 @@
           Bit Of Background
         </h2>
       </div>
-      <article>
+      <article class="flex flex-col gap-16">
         <section
-          class="container mx-auto px-16 flex flex-col md:grid grid-cols-3 grid-rows-1 gap-16 items-center"
+          class="container mx-auto px-16 flex flex-col md:grid grid-cols-3 gap-8 md:gap-16 items-center"
         >
-          <div class="col-start-2 col-end-4 row-start-1 row-end-1">
+          <div class="col-start-1 col-end-3 row-start-1 row-end-2">
+            <img src="./images/20231211_170533.jpg" class="rounded-[8px]" />
+          </div>
+          <aside class="col-start-2 col-end-4 row-start-1 row-end-2 z-10">
+            <p
+              class="blocked-text text-white md:bg-neutral-950/60 md:p-8 rounded-[8px] backdrop-blur-lg"
+            >
+              Fireworks went off as millions in Kuala Lumpur, Malaysia celebrated New Year's 2009. On the same day, a young Arakanese boy was born. That boy was me. Only 349 days later, they shipped me and my father to Canada on December 15, 2009. We lived in Surrey, British Columbia for two years until we move to Regina, Saskatchewan. I've lived in the prairie's capital ever since.
+            </p>
+          </aside>
+        </section>
+        <section
+          class="container mx-auto px-16 flex flex-col md:grid grid-cols-3 gap-8 md:gap-16 items-center"
+        >
+          <div class="col-start-2 col-end-4 row-start-1 row-end-2">
             <img
               src="./images/Screenshot 2024-07-05 150831.png"
               class="rounded-[8px]"
             />
           </div>
-          <aside class="col-start-1 col-end-3 row-start-1 row-end-1">
+          <aside class="col-start-1 col-end-3 row-start-1 row-end-2">
             <p
               class="blocked-text text-white md:bg-neutral-950/60 md:p-8 rounded-[8px] backdrop-blur-lg"
             >
@@ -172,13 +186,27 @@
             </p>
           </aside>
         </section>
+        <section
+          class="container mx-auto px-16 flex flex-col md:grid grid-cols-3 gap-8 md:gap-16 items-center"
+        >
+          <div class="col-start-1 col-end-3 row-start-1 row-end-2">
+            <img src="./images/20231030_213155.png" class="rounded-[8px] object-cover" />
+          </div>
+          <aside class="col-start-2 col-end-4 row-start-1 row-end-2">
+            <p
+              class="blocked-text text-white md:bg-neutral-950/60 md:p-8 rounded-[8px] backdrop-blur-lg"
+            >
+              We are the stars. Every organ, mineral, vitamin, and internal structure is a culmination of interstellar matter coming together. I was only 13 when this epiphany hit me. There and then, my love for the cosmos began. To the left, you're looking at an image I took in the backyard with my smartphone, and a small telescope.
+            </p>
+          </aside>
+        </section>
       </article>
     </main>
     <footer class="bg-neutral-950 text-white">
-      <div class="container mx-auto p-8 px-16">
-        <p>&copy; 2024 Khai Moe Razar Saw </p>
+      <div class="container mx-auto p-8 px-16 flex flex-col gap-8">
+        <p>&copy; 2024 Khai Moe Razar Saw</p>
         <a href="mailto:razar.saw@gmail.com">razar.saw@gmail.com</a>
-        <p>371 Retallack St,<br />Regina, SK<br />S4R 3N1</p>
+        <p>371 Retallack St,<br />Regina, SK S4R 3N1</p>
       </div>
     </footer>
   </body>
