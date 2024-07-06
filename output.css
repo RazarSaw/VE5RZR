@@ -685,14 +685,6 @@ video {
   grid-column-start: 2;
 }
 
-.col-start-3{
-  grid-column-start: 3;
-}
-
-.col-start-4{
-  grid-column-start: 4;
-}
-
 .col-end-3{
   grid-column-end: 3;
 }
@@ -701,28 +693,12 @@ video {
   grid-column-end: 4;
 }
 
-.col-end-6{
-  grid-column-end: 6;
-}
-
-.col-end-5{
-  grid-column-end: 5;
-}
-
 .row-start-1{
   grid-row-start: 1;
 }
 
-.row-start-2{
-  grid-row-start: 2;
-}
-
 .row-end-2{
   grid-row-end: 2;
-}
-
-.row-end-3{
-  grid-row-end: 3;
 }
 
 .float-start{
@@ -875,10 +851,6 @@ video {
 
 .hidden{
   display: none;
-}
-
-.aspect-square{
-  aspect-ratio: 1 / 1;
 }
 
 .w-\[this-is\\\\\]{
@@ -1100,6 +1072,10 @@ video {
   list-style-position: outside;
 }
 
+.list-disc{
+  list-style-type: disc;
+}
+
 .appearance-none{
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -1239,24 +1215,8 @@ video {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-4{
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-cols-5{
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.grid-rows-4{
-  grid-template-rows: repeat(4, minmax(0, 1fr));
-}
-
 .grid-rows-\[auto_1fr\]{
   grid-template-rows: auto 1fr;
-}
-
-.grid-rows-2{
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -1939,6 +1899,11 @@ video {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\/images\/20240510_222830\.jpg\'\)\]{
   background-image: url('./images/20240510_222830.jpg');
 }
@@ -2090,6 +2055,10 @@ video {
 .py-32{
   padding-top: 8rem;
   padding-bottom: 8rem;
+}
+
+.pl-4{
+  padding-left: 1rem;
 }
 
 .text-left{
@@ -2625,7 +2594,7 @@ video {
   forced-color-adjust: none;
 }
 
-p {
+p, a, h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -2795,6 +2764,12 @@ main {
   .md\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:grid-cols-\[1fr_auto\]{
+    grid-template-columns: 1fr auto;
   }
 }
 
